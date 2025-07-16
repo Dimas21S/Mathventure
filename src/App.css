@@ -1,42 +1,170 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+/* Cozy Base Styles */
+.cozy-mathventure {
+  min-height: 90vh;
+  background-color: brown;
+  background-size: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 2rem;
+  font-family: 'Comic Sans MS', 'Marker Felt', 'Chalkboard', cursive;
+}
+
+.cozy-container {
+  background-color: rgba(255, 253, 245, 0.9);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f0e6d2;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Cozy Title */
+#title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #8b5a2b;
+  margin-bottom: 1.5rem;
   text-align: center;
+  font-family: 'Chalkboard SE', cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Cozy Buttons */
+.cozy-button,
+#start-button,
+#math-problem-submit {
+  background-color: #d4a373;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 1rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Comic Sans MS', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.cozy-button:hover,
+#start-button:hover,
+#math-problem-submit:hover {
+  background-color: #bc8a5f;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.card {
-  padding: 2em;
+/* Cozy Form */
+#math-problem-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  margin: 2rem auto;
+  border: 1px solid #e9d8c5;
 }
 
-.read-the-docs {
-  color: #888;
+#math-problem-input {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 1rem 0;
+  border: 2px solid #e9d8c5;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  background-color: #fffdfa;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+#math-problem-input:focus {
+  outline: none;
+  border-color: #d4a373;
+  box-shadow: 0 0 0 3px rgba(212, 163, 115, 0.2);
+}
+
+.problem-text {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: #6b4b3e;
+  font-family: 'Chalkboard SE', cursive;
+}
+
+/* Cozy Game Header */
+.cozy-game-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 1.5rem;
+  padding: 0.8rem 1.2rem;
+  background-color: #f8f1e9;
+  border-radius: 12px;
+  border: 1px solid #e9d8c5;
+}
+
+/* Cozy Game Over */
+.cozy-game-over {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e9d8c5;
+}
+
+/* Cozy Welcome Screen */
+.cozy-welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+#subtitle {
+  font-size: 1.8rem;
+  color: #8b5a2b;
+  margin-bottom: 1.2rem;
+  font-family: 'Chalkboard SE', cursive;
+}
+
+#description {
+  font-size: 1.2rem;
+  color: #a78a7f;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+/* Cozy Alert Component */
+.cozy-alert {
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 1rem 0;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.success {
+  background-color: #e6f2e9;
+  color: #2e7d32;
+  border: 1px solid #c8e6c9;
+}
+
+.danger {
+  background-color: #ffebee;
+  color: #c62828;
+  border: 1px solid #ffcdd2;
 }
